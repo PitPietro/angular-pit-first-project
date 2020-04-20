@@ -13,6 +13,11 @@ export const products = [
     name: 'Phone Standard',
     price: 299,
     description: ''
+  },
+  {
+    name: 'Luna Phone',
+    price: 1800,
+    description: 'A test phone to see if the list changes'
   }
 ];
 
