@@ -6,8 +6,6 @@ import { Injectable } from '@angular/core';
 
 export class CartService {
 
-  constructor() { }
-
   /* store the array of the current products in the cart. */
   items = [];
 
@@ -26,5 +24,7 @@ export class CartService {
     this.items = []
     return this.items;
   }
+
+  constructor() { }
 
 }
