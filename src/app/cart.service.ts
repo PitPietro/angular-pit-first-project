@@ -21,7 +21,7 @@ export class CartService {
     return this.items;
   }
 
-  /* */
+  /* returns an empty array of items.*/
   clearCart() {
     this.items = []
     return this.items;
