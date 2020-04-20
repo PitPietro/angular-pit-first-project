@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+  ) { }
 
   ngOnInit() {
-  }
+  this.route.paramMap.subscribe(params => {
+    this.product = products[+params.get('productId')];
+  });
+}
 
 }
